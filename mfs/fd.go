@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	mod "github.com/ipfs/boxo/ipld/unixfs/mod"
+	mod "github.com/glin-gogogo/boxo/ipld/unixfs/mod"
 	ipld "github.com/ipfs/go-ipld-format"
 )
 

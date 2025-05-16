@@ -17,8 +17,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
-	"github.com/ipfs/boxo/bitswap/network"
+	bsmsg "github.com/glin-gogogo/boxo/bitswap/message"
+	"github.com/glin-gogogo/boxo/bitswap/network"
 	blocks "github.com/ipfs/go-block-format"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/libp2p/go-libp2p/core/host"

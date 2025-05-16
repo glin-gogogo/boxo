@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/ipfs/boxo/files"
-	"github.com/ipfs/boxo/ipld/unixfs"
+	"github.com/glin-gogogo/boxo/files"
+	"github.com/glin-gogogo/boxo/ipld/unixfs"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

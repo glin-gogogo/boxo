@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	ipns_pb "github.com/ipfs/boxo/ipns/pb"
-	"github.com/ipfs/boxo/path"
-	"github.com/ipfs/boxo/util"
+	ipns_pb "github.com/glin-gogogo/boxo/ipns/pb"
+	"github.com/glin-gogogo/boxo/path"
+	"github.com/glin-gogogo/boxo/util"
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/ipld/go-ipld-prime"

@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.3
 // 	protoc        v5.29.3
-// source: github.com/ipfs/boxo/ipns/pb/record.proto
+// source: github.com/glin-gogogo/boxo/ipns/pb/record.proto
 
 package pb
 

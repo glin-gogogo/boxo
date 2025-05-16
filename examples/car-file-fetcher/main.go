@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ipfs/boxo/files"
-	"github.com/ipfs/boxo/gateway"
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/files"
+	"github.com/glin-gogogo/boxo/gateway"
+	"github.com/glin-gogogo/boxo/path"
 )
 
 func main() {

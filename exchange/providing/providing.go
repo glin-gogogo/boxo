@@ -5,8 +5,8 @@ package providing
 import (
 	"context"
 
-	"github.com/ipfs/boxo/exchange"
-	"github.com/ipfs/boxo/provider"
+	"github.com/glin-gogogo/boxo/exchange"
+	"github.com/glin-gogogo/boxo/provider"
 	blocks "github.com/ipfs/go-block-format"
 )
 

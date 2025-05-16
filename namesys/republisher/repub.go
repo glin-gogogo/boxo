@@ -7,9 +7,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ipfs/boxo/ipns"
-	"github.com/ipfs/boxo/keystore"
-	"github.com/ipfs/boxo/namesys"
+	"github.com/glin-gogogo/boxo/ipns"
+	"github.com/glin-gogogo/boxo/keystore"
+	"github.com/glin-gogogo/boxo/namesys"
 	ds "github.com/ipfs/go-datastore"
 	logging "github.com/ipfs/go-log/v2"
 	ic "github.com/libp2p/go-libp2p/core/crypto"

@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.3
 // 	protoc        v5.29.3
-// source: github.com/ipfs/boxo/ipld/merkledag/pb/merkledag.proto
+// source: github.com/glin-gogogo/boxo/ipld/merkledag/pb/merkledag.proto
 
 package pb
 

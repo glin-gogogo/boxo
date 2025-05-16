@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
+	bsmsg "github.com/glin-gogogo/boxo/bitswap/message"
 
 	cid "github.com/ipfs/go-cid"
 

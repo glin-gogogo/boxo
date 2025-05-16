@@ -9,9 +9,9 @@ import (
 	"os"
 	"time"
 
-	files "github.com/ipfs/boxo/files"
-	dag "github.com/ipfs/boxo/ipld/merkledag"
-	pb "github.com/ipfs/boxo/ipld/unixfs/pb"
+	files "github.com/glin-gogogo/boxo/files"
+	dag "github.com/glin-gogogo/boxo/ipld/merkledag"
+	pb "github.com/glin-gogogo/boxo/ipld/unixfs/pb"
 	ipld "github.com/ipfs/go-ipld-format"
 	"google.golang.org/protobuf/proto"
 )

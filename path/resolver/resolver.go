@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ipfs/boxo/fetcher"
-	fetcherhelpers "github.com/ipfs/boxo/fetcher/helpers"
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/fetcher"
+	fetcherhelpers "github.com/glin-gogogo/boxo/fetcher/helpers"
+	"github.com/glin-gogogo/boxo/path"
 	cid "github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/ipld/go-ipld-prime"

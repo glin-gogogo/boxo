@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/boxo/internal/test"
+	"github.com/glin-gogogo/boxo/internal/test"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	chunker "github.com/ipfs/boxo/chunker"
-	merkledag "github.com/ipfs/boxo/ipld/merkledag"
-	mdtest "github.com/ipfs/boxo/ipld/merkledag/test"
-	ft "github.com/ipfs/boxo/ipld/unixfs"
-	h "github.com/ipfs/boxo/ipld/unixfs/importer/helpers"
-	uio "github.com/ipfs/boxo/ipld/unixfs/io"
+	chunker "github.com/glin-gogogo/boxo/chunker"
+	merkledag "github.com/glin-gogogo/boxo/ipld/merkledag"
+	mdtest "github.com/glin-gogogo/boxo/ipld/merkledag/test"
+	ft "github.com/glin-gogogo/boxo/ipld/unixfs"
+	h "github.com/glin-gogogo/boxo/ipld/unixfs/importer/helpers"
+	uio "github.com/glin-gogogo/boxo/ipld/unixfs/io"
 	ipld "github.com/ipfs/go-ipld-format"
 	"github.com/ipfs/go-test/random"
 )

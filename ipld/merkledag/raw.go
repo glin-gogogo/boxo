@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	u "github.com/ipfs/boxo/util"
+	u "github.com/glin-gogogo/boxo/util"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

@@ -6,7 +6,7 @@ import (
 	"slices"
 	"strings"
 
-	pb "github.com/ipfs/boxo/ipld/merkledag/pb"
+	pb "github.com/glin-gogogo/boxo/ipld/merkledag/pb"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

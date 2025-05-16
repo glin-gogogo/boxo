@@ -8,9 +8,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
-	iface "github.com/ipfs/boxo/bitswap/network"
-	"github.com/ipfs/boxo/bitswap/network/bsnet/internal"
+	bsmsg "github.com/glin-gogogo/boxo/bitswap/message"
+	iface "github.com/glin-gogogo/boxo/bitswap/network"
+	"github.com/glin-gogogo/boxo/bitswap/network/bsnet/internal"
 
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/libp2p/go-libp2p/core/host"

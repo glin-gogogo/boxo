@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.3
 // 	protoc        v5.29.3
-// source: github.com/ipfs/boxo/bitswap/message/pb/message.proto
+// source: github.com/glin-gogogo/boxo/bitswap/message/pb/message.proto
 
 package pb
 

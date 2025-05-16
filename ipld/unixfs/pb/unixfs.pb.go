@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.3
 // 	protoc        v5.29.3
-// source: github.com/ipfs/boxo/ipld/unixfs/pb/unixfs.proto
+// source: github.com/glin-gogogo/boxo/ipld/unixfs/pb/unixfs.proto
 
 package pb
 

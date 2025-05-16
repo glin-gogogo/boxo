@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/gammazero/deque"
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
-	iface "github.com/ipfs/boxo/bitswap/network"
-	bsnet "github.com/ipfs/boxo/bitswap/network/bsnet"
+	bsmsg "github.com/glin-gogogo/boxo/bitswap/message"
+	iface "github.com/glin-gogogo/boxo/bitswap/network"
+	bsnet "github.com/glin-gogogo/boxo/bitswap/network/bsnet"
 	delay "github.com/ipfs/go-ipfs-delay"
 	tnet "github.com/libp2p/go-libp2p-testing/net"
 	"github.com/libp2p/go-libp2p/core/connmgr"

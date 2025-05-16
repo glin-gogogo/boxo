@@ -11,7 +11,7 @@ import (
 	"sync"
 
 	"github.com/cespare/xxhash/v2"
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/path"
 )
 
 //go:embed *.html *.css

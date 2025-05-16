@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"path"
 
-	dag "github.com/ipfs/boxo/ipld/merkledag"
+	dag "github.com/glin-gogogo/boxo/ipld/merkledag"
 	"github.com/ipfs/go-cid"
 	ipld "github.com/ipfs/go-ipld-format"
 )

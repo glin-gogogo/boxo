@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	mdag "github.com/ipfs/boxo/ipld/merkledag"
-	unixfs "github.com/ipfs/boxo/ipld/unixfs"
+	mdag "github.com/glin-gogogo/boxo/ipld/merkledag"
+	unixfs "github.com/glin-gogogo/boxo/ipld/unixfs"
 	ipld "github.com/ipfs/go-ipld-format"
 )
 

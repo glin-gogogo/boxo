@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/path"
 )
 
 type DataCallback func(p path.ImmutablePath, reader io.Reader) error

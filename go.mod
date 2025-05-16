@@ -1,4 +1,4 @@
-module github.com/ipfs/boxo
+module github.com/glin-gogogo/boxo
 
 go 1.23.0
 

@@ -1,8 +1,8 @@
 package bitswap
 
 import (
-	"github.com/ipfs/boxo/bitswap/message"
-	"github.com/ipfs/boxo/bitswap/tracer"
+	"github.com/glin-gogogo/boxo/bitswap/message"
+	"github.com/glin-gogogo/boxo/bitswap/tracer"
 	"github.com/libp2p/go-libp2p/core/peer"
 )
 

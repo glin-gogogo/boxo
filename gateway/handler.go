@@ -15,9 +15,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/boxo/gateway/assets"
-	"github.com/ipfs/boxo/ipns"
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/gateway/assets"
+	"github.com/glin-gogogo/boxo/ipns"
+	"github.com/glin-gogogo/boxo/path"
 	cid "github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/libp2p/go-libp2p/core/peer"

@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/boxo/files"
+	"github.com/glin-gogogo/boxo/files"
 	"github.com/stretchr/testify/assert"
 )
 

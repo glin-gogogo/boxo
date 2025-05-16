@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ipfs/boxo/examples/gateway/common"
-	"github.com/ipfs/boxo/gateway"
+	"github.com/glin-gogogo/boxo/examples/gateway/common"
+	"github.com/glin-gogogo/boxo/gateway"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

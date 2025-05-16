@@ -8,10 +8,10 @@ import (
 	"math"
 	"testing"
 
-	mdtest "github.com/ipfs/boxo/ipld/merkledag/test"
-	"github.com/ipfs/boxo/ipld/unixfs"
-	"github.com/ipfs/boxo/ipld/unixfs/hamt"
-	"github.com/ipfs/boxo/ipld/unixfs/internal"
+	mdtest "github.com/glin-gogogo/boxo/ipld/merkledag/test"
+	"github.com/glin-gogogo/boxo/ipld/unixfs"
+	"github.com/glin-gogogo/boxo/ipld/unixfs/hamt"
+	"github.com/glin-gogogo/boxo/ipld/unixfs/internal"
 	ipld "github.com/ipfs/go-ipld-format"
 	"github.com/stretchr/testify/assert"
 )

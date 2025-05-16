@@ -19,9 +19,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/glin-gogogo/boxo/ipns"
+	"github.com/glin-gogogo/boxo/path"
 	lru "github.com/hashicorp/golang-lru/v2"
-	"github.com/ipfs/boxo/ipns"
-	"github.com/ipfs/boxo/path"
 	"github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

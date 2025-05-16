@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ipfs/boxo/pinning/remote/client/openapi"
+	"github.com/glin-gogogo/boxo/pinning/remote/client/openapi"
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/multiformats/go-multiaddr"

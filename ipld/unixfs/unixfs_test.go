@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	pb "github.com/ipfs/boxo/ipld/unixfs/pb"
+	pb "github.com/glin-gogogo/boxo/ipld/unixfs/pb"
 	"google.golang.org/protobuf/proto"
 )
 

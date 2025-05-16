@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/boxo/ipns"
+	"github.com/glin-gogogo/boxo/ipns"
 	"github.com/libp2p/go-libp2p/core/routing"
 )
 

@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/boxo/gateway/assets"
-	"github.com/ipfs/boxo/path"
-	"github.com/ipfs/boxo/path/resolver"
+	"github.com/glin-gogogo/boxo/gateway/assets"
+	"github.com/glin-gogogo/boxo/path"
+	"github.com/glin-gogogo/boxo/path/resolver"
 	"github.com/ipfs/go-cid"
 	ipld "github.com/ipfs/go-ipld-format"
 	"github.com/ipld/go-ipld-prime/datamodel"

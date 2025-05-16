@@ -5,8 +5,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ipfs/boxo/bitswap/client/wantlist"
-	pb "github.com/ipfs/boxo/bitswap/message/pb"
+	"github.com/glin-gogogo/boxo/bitswap/client/wantlist"
+	pb "github.com/glin-gogogo/boxo/bitswap/message/pb"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	"github.com/ipfs/go-test/random"

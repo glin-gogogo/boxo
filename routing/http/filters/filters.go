@@ -6,8 +6,8 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/ipfs/boxo/routing/http/types"
-	"github.com/ipfs/boxo/routing/http/types/iter"
+	"github.com/glin-gogogo/boxo/routing/http/types"
+	"github.com/glin-gogogo/boxo/routing/http/types/iter"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/multiformats/go-multiaddr"
 )

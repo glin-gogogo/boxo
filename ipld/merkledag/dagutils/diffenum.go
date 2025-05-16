@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	mdag "github.com/ipfs/boxo/ipld/merkledag"
+	mdag "github.com/glin-gogogo/boxo/ipld/merkledag"
 	cid "github.com/ipfs/go-cid"
 	ipld "github.com/ipfs/go-ipld-format"
 )

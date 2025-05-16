@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	blockstore "github.com/ipfs/boxo/blockstore"
-	posinfo "github.com/ipfs/boxo/filestore/posinfo"
-	dag "github.com/ipfs/boxo/ipld/merkledag"
+	blockstore "github.com/glin-gogogo/boxo/blockstore"
+	posinfo "github.com/glin-gogogo/boxo/filestore/posinfo"
+	dag "github.com/glin-gogogo/boxo/ipld/merkledag"
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
 	ipld "github.com/ipfs/go-ipld-format"

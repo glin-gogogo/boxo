@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ipfs/boxo/ipns"
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/ipns"
+	"github.com/glin-gogogo/boxo/path"
 	ds "github.com/ipfs/go-datastore"
 	dsquery "github.com/ipfs/go-datastore/query"
 	"github.com/libp2p/go-libp2p/core/crypto"

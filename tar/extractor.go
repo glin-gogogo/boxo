@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/boxo/files"
+	"github.com/glin-gogogo/boxo/files"
 )
 
 var (

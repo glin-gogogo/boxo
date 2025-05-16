@@ -3,7 +3,7 @@ package filters
 import (
 	"testing"
 
-	"github.com/ipfs/boxo/routing/http/types"
+	"github.com/glin-gogogo/boxo/routing/http/types"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/multiformats/go-multiaddr"
 	"github.com/stretchr/testify/assert"

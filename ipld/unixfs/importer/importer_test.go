@@ -6,9 +6,9 @@ import (
 	"io"
 	"testing"
 
-	chunker "github.com/ipfs/boxo/chunker"
-	mdtest "github.com/ipfs/boxo/ipld/merkledag/test"
-	uio "github.com/ipfs/boxo/ipld/unixfs/io"
+	chunker "github.com/glin-gogogo/boxo/chunker"
+	mdtest "github.com/glin-gogogo/boxo/ipld/merkledag/test"
+	uio "github.com/glin-gogogo/boxo/ipld/unixfs/io"
 	cid "github.com/ipfs/go-cid"
 	ipld "github.com/ipfs/go-ipld-format"
 	"github.com/ipfs/go-test/random"

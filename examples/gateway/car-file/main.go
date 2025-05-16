@@ -9,10 +9,10 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/ipfs/boxo/blockservice"
-	"github.com/ipfs/boxo/examples/gateway/common"
-	offline "github.com/ipfs/boxo/exchange/offline"
-	"github.com/ipfs/boxo/gateway"
+	"github.com/glin-gogogo/boxo/blockservice"
+	"github.com/glin-gogogo/boxo/examples/gateway/common"
+	offline "github.com/glin-gogogo/boxo/exchange/offline"
+	"github.com/glin-gogogo/boxo/gateway"
 	"github.com/ipfs/go-cid"
 	carblockstore "github.com/ipld/go-car/v2/blockstore"
 )

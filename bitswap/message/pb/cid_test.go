@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	u "github.com/ipfs/boxo/util"
+	u "github.com/glin-gogogo/boxo/util"
 	"github.com/ipfs/go-cid"
 	"google.golang.org/protobuf/proto"
 )

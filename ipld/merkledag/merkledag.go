@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/gammazero/deque"
-	bserv "github.com/ipfs/boxo/blockservice"
+	bserv "github.com/glin-gogogo/boxo/blockservice"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

@@ -1,10 +1,10 @@
 package mdutils
 
 import (
-	bsrv "github.com/ipfs/boxo/blockservice"
-	blockstore "github.com/ipfs/boxo/blockstore"
-	offline "github.com/ipfs/boxo/exchange/offline"
-	dag "github.com/ipfs/boxo/ipld/merkledag"
+	bsrv "github.com/glin-gogogo/boxo/blockservice"
+	blockstore "github.com/glin-gogogo/boxo/blockstore"
+	offline "github.com/glin-gogogo/boxo/exchange/offline"
+	dag "github.com/glin-gogogo/boxo/ipld/merkledag"
 	ds "github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
 	ipld "github.com/ipfs/go-ipld-format"

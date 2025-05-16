@@ -5,8 +5,8 @@ import (
 	"sync"
 	"testing"
 
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
-	bsnet "github.com/ipfs/boxo/bitswap/network"
+	bsmsg "github.com/glin-gogogo/boxo/bitswap/message"
+	bsnet "github.com/glin-gogogo/boxo/bitswap/network"
 	blocks "github.com/ipfs/go-block-format"
 	delay "github.com/ipfs/go-ipfs-delay"
 	tnet "github.com/libp2p/go-libp2p-testing/net"

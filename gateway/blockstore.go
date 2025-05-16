@@ -10,9 +10,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	blockstore "github.com/glin-gogogo/boxo/blockstore"
+	"github.com/glin-gogogo/boxo/util"
 	lru "github.com/hashicorp/golang-lru/v2"
-	blockstore "github.com/ipfs/boxo/blockstore"
-	"github.com/ipfs/boxo/util"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

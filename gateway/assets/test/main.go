@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ipfs/boxo/gateway/assets"
+	"github.com/glin-gogogo/boxo/gateway/assets"
 	"github.com/ipfs/go-cid"
 
 	// Ensure basic codecs are registered.

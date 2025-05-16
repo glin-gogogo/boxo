@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.3
 // 	protoc        v5.29.3
-// source: github.com/ipfs/boxo/filestore/pb/dataobj.proto
+// source: github.com/glin-gogogo/boxo/filestore/pb/dataobj.proto
 
 package pb
 

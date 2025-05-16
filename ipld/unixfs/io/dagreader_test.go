@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	mdag "github.com/ipfs/boxo/ipld/merkledag"
-	"github.com/ipfs/boxo/ipld/unixfs"
-	testu "github.com/ipfs/boxo/ipld/unixfs/test"
+	mdag "github.com/glin-gogogo/boxo/ipld/merkledag"
+	"github.com/glin-gogogo/boxo/ipld/unixfs"
+	testu "github.com/glin-gogogo/boxo/ipld/unixfs/test"
 )
 
 func TestBasicRead(t *testing.T) {

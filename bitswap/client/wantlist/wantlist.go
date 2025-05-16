@@ -6,7 +6,7 @@ import (
 	"cmp"
 	"slices"
 
-	pb "github.com/ipfs/boxo/bitswap/message/pb"
+	pb "github.com/glin-gogogo/boxo/bitswap/message/pb"
 	cid "github.com/ipfs/go-cid"
 )
 

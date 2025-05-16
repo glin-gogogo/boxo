@@ -15,9 +15,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
-	pb "github.com/ipfs/boxo/bitswap/message/pb"
-	"github.com/ipfs/boxo/bitswap/network"
+	bsmsg "github.com/glin-gogogo/boxo/bitswap/message"
+	pb "github.com/glin-gogogo/boxo/bitswap/message/pb"
+	"github.com/glin-gogogo/boxo/bitswap/network"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/core/peerstore"

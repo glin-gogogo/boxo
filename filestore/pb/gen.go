@@ -12,9 +12,9 @@
 //   - https://protobuf.dev/reference/go/faq#namespace-conflict
 //   - https://github.com/golang/protobuf/issues/1122#issuecomment-2045945265
 //
-//go:generate mkdir -p github.com/ipfs/boxo/filestore/pb
-//go:generate ln -f dataobj.proto github.com/ipfs/boxo/filestore/pb/
-//go:generate protoc --go_out=. github.com/ipfs/boxo/filestore/pb/dataobj.proto
-//go:generate mv -f github.com/ipfs/boxo/filestore/pb/dataobj.pb.go .
+//go:generate mkdir -p github.com/glin-gogogo/boxo/filestore/pb
+//go:generate ln -f dataobj.proto github.com/glin-gogogo/boxo/filestore/pb/
+//go:generate protoc --go_out=. github.com/glin-gogogo/boxo/filestore/pb/dataobj.proto
+//go:generate mv -f github.com/glin-gogogo/boxo/filestore/pb/dataobj.pb.go .
 //go:generate rm -rf github.com
 package pb

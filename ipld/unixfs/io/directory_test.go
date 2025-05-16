@@ -11,15 +11,15 @@ import (
 	"testing"
 	"time"
 
-	bsrv "github.com/ipfs/boxo/blockservice"
-	blockstore "github.com/ipfs/boxo/blockstore"
-	offline "github.com/ipfs/boxo/exchange/offline"
-	mdag "github.com/ipfs/boxo/ipld/merkledag"
-	mdtest "github.com/ipfs/boxo/ipld/merkledag/test"
-	ft "github.com/ipfs/boxo/ipld/unixfs"
-	"github.com/ipfs/boxo/ipld/unixfs/hamt"
-	"github.com/ipfs/boxo/ipld/unixfs/internal"
-	"github.com/ipfs/boxo/ipld/unixfs/private/linksize"
+	bsrv "github.com/glin-gogogo/boxo/blockservice"
+	blockstore "github.com/glin-gogogo/boxo/blockstore"
+	offline "github.com/glin-gogogo/boxo/exchange/offline"
+	mdag "github.com/glin-gogogo/boxo/ipld/merkledag"
+	mdtest "github.com/glin-gogogo/boxo/ipld/merkledag/test"
+	ft "github.com/glin-gogogo/boxo/ipld/unixfs"
+	"github.com/glin-gogogo/boxo/ipld/unixfs/hamt"
+	"github.com/glin-gogogo/boxo/ipld/unixfs/internal"
+	"github.com/glin-gogogo/boxo/ipld/unixfs/private/linksize"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
@@ -318,7 +318,7 @@ func TestIntegrityOfDirectorySwitch(t *testing.T) {
 // test to better predict how many nodes will be fetched.
 var defaultConcurrentFetch = 32
 
-// FIXME: Taken from private github.com/ipfs/boxo/ipld/merkledag@v0.2.3/merkledag.go.
+// FIXME: Taken from private github.com/glin-gogogo/boxo/ipld/merkledag@v0.2.3/merkledag.go.
 // (We can also pass an explicit concurrency value in `(*Shard).EnumLinksAsync()`
 // and take ownership of this configuration, but departing from the more
 // standard and reliable one in `go-merkledag`.

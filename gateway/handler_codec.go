@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/boxo/gateway/assets"
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/gateway/assets"
+	"github.com/glin-gogogo/boxo/path"
 	"github.com/ipfs/go-cid"
 
 	// Ensure basic codecs are registered.

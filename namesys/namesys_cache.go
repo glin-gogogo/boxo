@@ -3,7 +3,7 @@ package namesys
 import (
 	"time"
 
-	"github.com/ipfs/boxo/path"
+	"github.com/glin-gogogo/boxo/path"
 )
 
 type cacheEntry struct {

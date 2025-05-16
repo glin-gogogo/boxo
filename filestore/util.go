@@ -7,8 +7,8 @@ import (
 	"slices"
 	"strings"
 
-	dshelp "github.com/ipfs/boxo/datastore/dshelp"
-	pb "github.com/ipfs/boxo/filestore/pb"
+	dshelp "github.com/glin-gogogo/boxo/datastore/dshelp"
+	pb "github.com/glin-gogogo/boxo/filestore/pb"
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
 	dsq "github.com/ipfs/go-datastore/query"
