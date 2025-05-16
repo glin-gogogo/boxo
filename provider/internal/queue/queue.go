@@ -11,6 +11,7 @@ import (
 	namespace "github.com/ipfs/go-datastore/namespace"
 	query "github.com/ipfs/go-datastore/query"
 	logging "github.com/ipfs/go-log/v2"
+	ktds "github.com/ipfs/go-datastore/keytransform"
 )
 
 var log = logging.Logger("provider.queue")
@@ -61,6 +62,7 @@ func (q *Queue) Close() error {
 
 // Enqueue puts a cid in the queue
 func (q *Queue) Enqueue(cid cid.Cid) error {
+	log.Warnf("enqueueing cid: ", cid)
 	select {
 	case q.enqueue <- cid:
 		return nil
@@ -79,17 +81,49 @@ func (q *Queue) worker() {
 	var k datastore.Key = datastore.Key{}
 	var c cid.Cid = cid.Undef
 
+	dsImpl, ok := q.ds.(*ktds.Datastore)
+	if !ok {
+		log.Errorf("queue datastore is not a ktds.Datastore")
+		return
+		//panic("queue datastore is not a ktds.Datastore")
+	}
+	dsBatch, err := dsImpl.Batch(q.ctx)
+	if err != nil {
+		log.Errorf("error creating batch: %s, stopping provider", err)
+		return
+		//panic( err)
+	}
+
 	defer q.closed.Done()
 	defer q.close()
 
+	var es []*query.Entry
+	esIdx := 0
+	batchCommitFlag := false
 	for {
 		if c == cid.Undef {
-			head, err := q.getQueueHead()
+			if esIdx >= len(es) {
+				es, err = q.getQueueHeadBatch()
+				if err != nil {
+					log.Errorf("error querying for head of queue: %s, stopping provider", err)
+					return
+				}
+				esIdx = 0
+				batchCommitFlag = true
+				log.Infof("glin test..., got %d entries from queue", len(es))
+			}
+
+			var head *query.Entry = nil
+			if esIdx < len(es) {
+				head = es[esIdx]
+				esIdx++
+			}
+			//head, err := q.getQueueHead()
 
 			switch {
-			case err != nil:
-				log.Errorf("error querying for head of queue: %s, stopping provider", err)
-				return
+			//case err != nil:
+			//	log.Errorf("error querying for head of queue: %s, stopping provider", err)
+			//	return
 			case head != nil:
 				k = datastore.NewKey(head.Key)
 				c, err = cid.Parse(head.Value)
@@ -130,11 +164,20 @@ func (q *Queue) worker() {
 				continue
 			}
 		case dequeue <- c:
-			err := q.ds.Delete(q.ctx, k)
+			err := dsBatch.Delete(q.ctx, k)
+			//err := q.ds.Delete(q.ctx, k)
 			if err != nil {
 				log.Errorf("Failed to delete queued cid %s with key %s: %s", c, k, err)
 				continue
 			}
+			if batchCommitFlag {
+				if err := dsBatch.Commit(q.ctx); err != nil {
+					log.Errorf("Failed to commit batch: %s", err)
+					continue
+				}
+				batchCommitFlag = false
+			}
+
 			c = cid.Undef
 		case <-q.ctx.Done():
 			return
@@ -156,3 +199,32 @@ func (q *Queue) getQueueHead() (*query.Entry, error) {
 
 	return &r.Entry, r.Error
 }
+
+func (q *Queue) getQueueHeadBatch() ([]*query.Entry, error) {
+	limit := 3000
+	qry := query.Query{Orders: []query.Order{query.OrderByKey{}}, Limit: limit}
+	results, err := q.ds.Query(q.ctx, qry)
+	if err != nil {
+		return nil, err
+	}
+	defer results.Close()
+
+
+	var es []*query.Entry
+	for {
+		e, ok := results.NextSync()
+		if !ok {
+			break
+		}
+		if e.Error != nil {
+			return es, e.Error
+		}
+		es = append(es, &e.Entry)
+		limit--
+		if limit <= 0 {
+			return es, nil
+		}
+	}
+	return es, nil
+}
+
